@@ -7,7 +7,7 @@ class Book {
   }
 }
 
-//UI Class to Handle UI Tasks
+// UI Class to Handle UI Tasks
 class UI {
   static displayBooks() {
     const StoredBooks = [
@@ -36,7 +36,7 @@ class UI {
 <td>${book.isbn}</td>
 <td>${book.title}</td>
 <td>${book.author}</td>
-<td><a href="#" class="btn btndanger btn-sm delete">X</a></td>
+<td><a href="#" class="btn btn-warning btn-sm delete">X</a></td>
 `;
 
     list.appendChild(row);

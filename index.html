@@ -15,28 +15,41 @@
       <br />
       <form class="book-form text-center" id="book-form">
         <p>Add books to the list:</p>
-        <input
-          type="text"
-          name="isbn"
-          class="isbn"
-          id="isbn"
-          placeholder="Isbn"
-        />
-        <input
-          type="text"
-          name="title"
-          class="title"
-          id="title"
-          placeholder="Title"
-        />
-        <input
-          type="text"
-          name="author"
-          class="author"
-          placeholder="Author"
-          id="author"
-        />
-        <button type="submit" class="submit" id="submit">Add</button>
+        <div class="form-group">
+          <label for="isbn">ISBN</label>
+          <input
+            type="text"
+            name="isbn"
+            class="isbn"
+            id="isbn"
+            placeholder="Isbn"
+          />
+        </div>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            name="title"
+            class="title"
+            id="title"
+            placeholder="Title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input
+            type="text"
+            name="author"
+            class="author"
+            placeholder="Author"
+            id="author"
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-info submit m-2" id="submit">
+            Add book
+          </button>
+        </div>
       </form>
       <div class="booklist">
         <table class="table">
