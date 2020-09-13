@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyBookList</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header text-center p-3">MyReadingList</h1>
+      <h3 class="header-desc text-center">
+        Keep track of your goals to read more!
+      </h3>
+      <br />
+      <form class="book-form text-center" id="book-form">
+        <p>Add books to the list:</p>
+        <input
+          type="text"
+          name="isbn"
+          class="isbn"
+          id="isbn"
+          placeholder="Isbn"
+        />
+        <input
+          type="text"
+          name="title"
+          class="title"
+          id="title"
+          placeholder="Title"
+        />
+        <input
+          type="text"
+          name="author"
+          class="author"
+          placeholder="Author"
+          id="author"
+        />
+        <button type="submit" class="submit" id="submit">Add</button>
+      </form>
+      <div class="booklist">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" id="primary">#</th>
+              <th scope="col" id="title">Title</th>
+              <th scope="col" id="author">Author</th>
+              <th scope="col" id="remove">Remove</th>
+            </tr>
+          </thead>
+          <tbody id="list">
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+//Variables
+$primary-color: $green-300;
+
+.container {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: auto;
+  background-color: $primary-color;
+
+  .book-form input {
+    display: inline-block;
+  }
+}
