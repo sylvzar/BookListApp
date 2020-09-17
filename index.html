@@ -7,14 +7,25 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <div class="topbar">
+      <h3>Choose your theme:</h3>
+      <div class="selection">
+        <button class="btn btn-outline-dark light" id="light">light</button>
+        <button class="btn btn-outline-dark dark" id="dark">dark</button>
+      </div>
+    </div>
     <div class="container">
-      <h1 class="header text-center p-3">MyReadingList</h1>
+      <h1 class="header text-center p-3">
+        <img
+          src="node_modules/bootstrap-icons/icons/book.svg"
+          style="width: 3rem; padding: 5px"
+        />My<span>Reading</span>List
+      </h1>
       <h3 class="header-desc text-center">
         Keep track of your goals to read more!
       </h3>
       <br />
       <form class="book-form text-center" id="book-form">
-        <p>Add books to the list:</p>
         <div class="form-group">
           <label for="isbn">ISBN</label>
           <input
@@ -46,7 +57,7 @@
           />
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-info submit m-2" id="submit">
+          <button type="submit" class="btn btn-dark submit m-2" id="submit">
             Add book
           </button>
         </div>
