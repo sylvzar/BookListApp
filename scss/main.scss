@@ -9,26 +9,6 @@ body {
   margin: auto;
 }
 
-.topbar {
-  justify-content: center;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-  text-align: center;
-  padding-top: 10px;
-  margin: auto;
-  .selection {
-    display: flex;
-    justify-content: center;
-    .light,
-    .dark {
-      padding: 5px;
-      margin: 5px;
-    }
-  }
-}
-
 .container {
   justify-content: center;
   border-radius: 5px;

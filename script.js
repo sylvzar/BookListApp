@@ -90,6 +90,7 @@ class Store {
         books.splice(index, 1);
       }
     });
+
     localStorage.setItem('books', JSON.stringify(books));
   }
 }
@@ -132,7 +133,8 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
 document.querySelector('#list').addEventListener('click', (e) => {
   // Remove from UI
   UI.deleteBook(e.target);
-  // Remove from storage
+
+  // Remove book from store
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
   // Show delete alert
   UI.showAlert('Book Removed', 'success');
