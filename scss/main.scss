@@ -2,11 +2,14 @@
 
 //Variables
 $primary-color: $indigo-100;
-$secondary-color: $indigo-500;
+$secondary-color: $red-500;
 
 body {
-  max-width: 700px;
   margin: auto;
+  background-image: url('/img/books.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 700px;
 }
 
 .container {
@@ -16,8 +19,9 @@ body {
   flex-direction: column;
   max-width: 80%;
   margin: auto;
-  background-color: $primary-color;
+  background-color: rgba(255, 249, 239, 0.75);
   margin-top: 20px;
+  box-shadow: 2px 2px 20px rgba(61, 61, 61, 0.493);
 
   .header {
     span {
